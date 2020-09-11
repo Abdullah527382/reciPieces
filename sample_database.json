@@ -1,0 +1,94 @@
+{
+  "recipes": [
+    {
+      "ingredients": [
+        "2 cups drained well-cooked or canned chickpeas",
+        " liquid reserved",
+        "1/2 cup tahini (sesame paste)",
+        " optional",
+        " with some of its oil",
+        "1/4 cup extra-virgin olive oil",
+        " plus oil for drizzling",
+        "2 cloves garlic",
+        " peeled",
+        " or to taste",
+        "Salt and freshly ground black pepper to taste",
+        "1 tablespoon ground cumin or paprika",
+        " or to taste",
+        " plus a sprinkling for garnish",
+        "Juice of 1 lemon",
+        " plus more as needed",
+        "Chopped fresh parsley leaves for garnish"
+      ],
+      "type": "appetizer",
+      "imageURL": "https://assets.epicurious.com/photos/56fd46c2b62bcdaf17f428dd/6:4/w_620%2Ch_413/EP_03292016_NRR_Hummus_inset3.jpg",
+      "title": "Hummus",
+      "method": "https://www.epicurious.com/recipes/food/views/homemade-cheese-with-garlic-and-herbs",
+      "rating": 93
+    },
+    {
+      "type": "entree4",
+      "imageURL": "https://www.epicurious.com/recipes/food/views/my-favorite-simple-roast-chicken-231348",
+      "ingredients": [
+        "One 2- to 3-pound farm-raised chicken",
+        "\nKosher salt and freshly ground black pepper",
+        "\n2 teaspoons minced thyme (optional)",
+        "\nUnsalted butter",
+        "\nDijon mustard"
+      ],
+      "method": "https://www.epicurious.com/recipes/food/views/my-favorite-simple-roast-chicken-231348",
+      "title": "Simple Roast Chicken",
+      "rating": 91
+    },
+    {
+      "ingredients": [
+        "1 tablespoon neutral vegetable oil",
+        "3 large scallions",
+        " white and pale-green parts thinly sliced",
+        " dark-green parts trimmed",
+        " finely chopped",
+        "3/4 teaspoon kosher salt",
+        " plus more",
+        "1 avocado",
+        " coarsely chopped",
+        "3/4 cup plain Greek yogurt",
+        "Tortilla chips or pita chips (for serving; optional)"
+      ],
+      "imageURL": "https://assets.epicurious.com/photos/5886572c490b54086ea36b72/6:4/w_140%2Ch_92/Creamy-Avocado-Dip-With-Scallions-20012017.jpg",
+      "title": "Creamy Avocado Dip With Scallions",
+      "type": "appetizer",
+      "method": "https://www.epicurious.com/recipes/food/views/creamy-avocado-dip-with-scallions",
+      "rating": 87
+    },
+    {
+      "ingredients": [
+        "8 ounces cream cheese, softened",
+        "2 tablespoons unsalted butter, softened",
+        "1 small garlic clove, quartered",
+        "1/4 teaspoon kosher salt",
+        "1/4 cup chopped parsley leaves",
+        "1 tablespoon chopped chives",
+        "Crackers or toasts (for serving)"
+      ],
+      "rating ": 100,
+      "method": "https://www.epicurious.com/recipes/food/views/homemade-cheese-with-garlic-and-herbs",
+      "type": "appetizer",
+      "title ": "Homemade Cheese Spread with Garlic and Herbs",
+      "imageURL": "https://assets.epicurious.com/photos/5a26f5503f267046ce356c26/6:4/w_620%2Ch_413/Homemade-Cheese-Spread-with-Garlic-and-Herbs-new-years-28112017.jpg"
+    },
+    {
+      "title": "Simple Roast Chicken",
+      "type": "entree",
+      "ingredients": [
+        "One 2- to 3-pound farm-raised chicken",
+        "\nKosher salt and freshly ground black pepper",
+        "\n2 teaspoons minced thyme (optional)",
+        "\nUnsalted butter",
+        "\nDijon mustard"
+      ],
+      "imageURL": "https://www.epicurious.com/recipes/food/views/my-favorite-simple-roast-chicken-231348",
+      "rating": 93,
+      "method": "https://www.epicurious.com/recipes/food/views/my-favorite-simple-roast-chicken-231348"
+    }
+  ]
+}
