@@ -32,7 +32,7 @@ It is essentially a vanilla javascript based application which takes in a list o
 
 ### Task
 
-In this iteration, you are expected to:
+In this iteration, we are expected to:
 
 1. Create tests for all of the functions in the agreed upon interface.
 
