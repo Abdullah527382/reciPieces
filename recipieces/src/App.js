@@ -15,13 +15,38 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+//the chips for genres stuff
+import Chip from '@material-ui/core/Chip';
+//for routes
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+//addMovie.js
+import {AddMovie} from './addMovie.js';
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Assalam Alaikum</h1>
+        <Router>
+          <Switch>
+            <Route path="/addMovie">
+              {/* TODO: add movie form component here*/}
+              {AddMovie()}
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+      </header>
+    </div>
+  );
+}
+
+function Home() {
+  return (
+    <div>
+      <h1>Assalam Alaikum</h1>
         {/*inside HTML so need to use curly brackets for JS*/}
         <Async promiseFn={getMovies}> 
           <Async.Loading>Loading...</Async.Loading>
@@ -29,6 +54,7 @@ function App() {
             {data => {
               return(
                 <ul>
+                  <div className="container">
                   {data.movies.map((movie, index) => (
                     <MovieCard 
                     key={index}
@@ -36,24 +62,21 @@ function App() {
                     yearReleased={movie.yearReleased}
                     imageURL={movie.imageURL}
                     genres={movie.genres}
-
-                    
                     />
                   ))}
+                  </div>
                 </ul>
               )}}
           </Async.Fulfilled>
           <Async.Rejected>Error!</Async.Rejected>
           
         </Async>
-      </header>
     </div>
   );
 }
 
 function MovieCard(props){
   return (
-
       <Card style={{width: 225, margin: 20}}> {/*inline styling here */}
         <CardActionArea>
           <CardMedia
@@ -65,6 +88,11 @@ function MovieCard(props){
             <Typography gutterBottom variant="h5" component="h2">
               {props.title} ({props.yearReleased})
             </Typography>
+            <div>
+              {props.genres.map((genre, index) => (
+                <Chip key={index} label={genre} style={{margin: 5}}/>
+              ))}
+            </div>
           </CardContent>
         </CardActionArea>
       </Card>
