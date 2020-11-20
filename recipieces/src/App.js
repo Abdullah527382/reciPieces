@@ -55,7 +55,7 @@ function Home() {
               return(
                 <ul>
                   <div className="container">
-                  {data.movies.map((movie, index) => (
+                  {data.books.map((movie, index) => (//'movies' -> 'books'
                     <MovieCard 
                     key={index}
                     title={movie.title}
@@ -99,3 +99,4 @@ function MovieCard(props){
   );
 }
 export default App;
+
