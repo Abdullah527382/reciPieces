@@ -1,4 +1,6 @@
 //dependency 'npm install react-async'
+import { Link } from 'react-router-dom';
+
 import React from 'react';
 import Async from 'react-async';
 import './App.css';
@@ -21,6 +23,12 @@ import Chip from '@material-ui/core/Chip';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 //addMovie.js
 import {AddMovie} from './addMovie.js';
+
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+//npm install @material-ui/icons
+
+
 
 
 function App() {
@@ -69,8 +77,13 @@ function Home() {
               )}}
           </Async.Fulfilled>
           <Async.Rejected>Error!</Async.Rejected>
-          
         </Async>
+        <Link to="/addMovie">
+          <Fab color="primary" aria-label="add" 
+          style={{positon: 'fixed', right: 0, bottom: 0, margin: 30}}>
+            <AddIcon />
+          </Fab> 
+        </Link>
     </div>
   );
 }

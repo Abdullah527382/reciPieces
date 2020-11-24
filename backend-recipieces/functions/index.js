@@ -23,6 +23,22 @@ app.get("/getBooks", (request, response) => {
     .catch((err) => response.status(500).json({ error: err.code }));
 });
 
+app.get("/book/:bookId", (request, response) => {
+    admin
+    .firestore()
+    .collection("books")
+    .doc(request.params.bookId)
+    .get()
+    .then((data) => {
+        if (data.exists) {
+            return response.json({ status: "Success", book: data.data() });
+        } else {
+            return response
+                   .status(404)
+                   .json({ status: "Failed", error: "Movie not found" });
+        }
+    });
+});
 app.post('/createNewBook', (request, response) => {
     const genres = request.body.genres.split(",");
     const newBook = {
